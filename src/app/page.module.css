@@ -1,0 +1,55 @@
+.header {
+  width: auto;
+  height: 7vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo {
+    height: auto;
+    width: 20vw;
+}
+
+.nav {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3vw;
+  color: #BC002D;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+  padding: 1vw 0 1vw 0;
+}
+
+.steamy{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding: 3vw 0 1vw 0;
+
+}
+
+.steam1{
+    width: 2vw;
+    height: auto;
+}
+.steam2{
+    width: 2vw;
+    height: auto;
+}
+.steam3{
+    width: 2vw;
+    height: auto;
+}
+
+
+.takoyaki{
+    margin-left: 40vw;
+    width: 65vw;
+    height: auto;
+}
