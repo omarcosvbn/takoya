@@ -1,40 +1,90 @@
-.first{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    /* border: solid white; */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.steamy{
+.first {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.second {
+  width: 100vw;
+  height: 200vh;
+  overflow: hidden;
+}
+
+.steamy {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  padding: 3vw 0 1vw 0;
+  margin-top: 25vh;
+}
+
+.steam1 {
+  width: 2vw;
+  height: auto;
+}
+.steam2 {
+  width: 2vw;
+  height: auto;
+}
+.steam3 {
+  width: 2vw;
+  height: auto;
+}
+
+.takoyaki {
+  height: 20vw;
+  width: 20vw;
+  background-color: #bc002d;
+  border-radius: 50%;
+  position: fixed;
+  margin-top: 40vh;
+  z-index: 0;
+}
+
+
+.about__circle {
+    width: 20vw;
+    height: 20vw;
+    background-color: #bc002d;
+    border-radius: 50%;
+    margin-top: 40vh;
+    position: fixed;
+    z-index: 1;
+    
     display: flex;
     justify-content: center;
-    gap: 1vw;
-    padding: 3vw 0 1vw 0;
-    margin-top: 20vh;
+    align-items: center;
+    
+    color: white;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3vw;
 }
 
-.steam1{
-    width: 2vw;
-    height: auto;
-}
-.steam2{
-    width: 2vw;
-    height: auto;
-}
-.steam3{
-    width: 2vw;
-    height: auto;
-}
-
-
-.takoyaki{
-    margin-left: 40vw;
-    width: 60vw;
-}
-
-.falling{
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40vw;
+    margin: 50vh 2vw 0 2vw;
     position: fixed;
-    margin-top: calc(20vh + 8vw);
-    margin-left: 40vw;
+    z-index: 1;
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2vw;
+    color: black;
+}
+
+.about__text{
     width: 20vw;
+    text-align: justify;
 }
