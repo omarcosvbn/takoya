@@ -12,7 +12,7 @@
 
 .second {
   width: 100vw;
-  height: 200vh;
+  height: 150vh;
   overflow: hidden;
 }
 
@@ -47,44 +47,62 @@
   z-index: 0;
 }
 
-
 .about__circle {
-    width: 20vw;
-    height: 20vw;
-    background-color: #bc002d;
-    border-radius: 50%;
-    margin-top: 40vh;
-    position: fixed;
-    z-index: 1;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    color: white;
-    text-align: center;
-    font-family: "Dosis", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 3vw;
+  width: 20vw;
+  height: 20vw;
+  background-color: #bc002d;
+  border-radius: 50%;
+  margin-top: 40vh;
+  position: fixed;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3vw;
 }
 
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40vw;
-    margin: 50vh 2vw 0 2vw;
-    position: fixed;
-    z-index: 1;
-    font-family: "Dosis", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2vw;
-    color: black;
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40vw;
+  margin: 50vh 2vw 0 2vw;
+  position: fixed;
+  z-index: 1;
+
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2vw;
+  color: black;
 }
 
-.about__text{
-    width: 20vw;
-    text-align: justify;
+.about__text {
+  width: 20vw;
+  text-align: justify;
+}
+
+.footer {
+    position: absolute;
+    width: 100vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+
+    border-top: solid 40px #C0A891;
+    background-color: white;
+    color: #464646;
+
+    z-index: 1;
+}
+
+.adress {
 }

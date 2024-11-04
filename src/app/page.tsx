@@ -25,8 +25,11 @@ export default function Home() {
 
   // Create a ref to the second div and use the useInView hook to detect its visibility
   const secondDivRef = useRef(null);
+  const footerRef = useRef(null);
+
   const isInView1 = useInView(secondDivRef, { margin: "0px 0px -5% 0px" });
   const isInView2 = useInView(secondDivRef, { margin: "0px 0px -75% 0px" });
+  const isFooterInView = useInView(footerRef, { margin: "0px 0px 0% 0px" });
 
   return (
     <>
@@ -34,7 +37,8 @@ export default function Home() {
       <main className={styles.main}>
         <motion.h2
           className={styles.about__circle}
-          animate={{ opacity: isInView1 ? 1 : 0 }}
+          initial={{ opacity: 0 }} // Start with opacity 0
+          animate={{ opacity: isInView1 && !isFooterInView ? 1 : 0 }}
           transition={{ duration: 0.25 }} // Optional: smooth transition
         >
           About
@@ -43,7 +47,8 @@ export default function Home() {
         <div className={styles.about}>
           <motion.p
             className={styles.about__text}
-            animate={{ opacity: isInView1 ? 1 : 0 }}
+            initial={{ opacity: 0 }} // Start with opacity 0
+            animate={{ opacity: isInView1 && !isFooterInView ? 1 : 0 }}
             transition={{ duration: 0.25 }} // Optional: smooth transition
           >
             At Takoya, we believe in using the freshest ingredients, sourced
@@ -52,7 +57,8 @@ export default function Home() {
           </motion.p>
           <motion.p
             className={styles.about__text}
-            animate={{ opacity: isInView2 ? 1 : 0 }}
+            initial={{ opacity: 0 }} // Start with opacity 0
+            animate={{ opacity: isInView2 && !isFooterInView ? 1 : 0 }}
             transition={{ duration: 0.25 }} // Optional: smooth transition
           >
             Whether you’re joining us for a casual meal with friends, a romantic
@@ -65,7 +71,7 @@ export default function Home() {
 
         <motion.div
           className={styles.first}
-          animate={{ opacity: isInView1 ? 0 : 1 }} // Change opacity based on visibility of second div
+          animate={{ opacity: isInView1 && !isFooterInView ? 0 : 1 }} // Change opacity based on visibility of second div
           transition={{ duration: 0.25 }} // Optional: smooth transition
         >
           <div className={styles.steamy}>
@@ -92,6 +98,25 @@ export default function Home() {
 
         <motion.div className={styles.second} ref={secondDivRef}></motion.div>
       </main>
+      <footer className={styles.footer} ref={footerRef}>
+        <div className={styles.adress}>
+          <h2>Adress</h2>
+          <p>4690 Convoy St</p>
+          <p>San Diego CA</p>
+        </div>
+        <div className={styles.hours}>
+          <h2>Hours</h2>
+          <h3>Weekdays</h3>
+          <p>4pm - 9:30pm</p>
+          <h3>Weekend</h3>
+          <p>San Diego CA</p>
+        </div>
+        <div className={styles.contacts}>
+          <h2>Contacts</h2>
+          <p>999-999-999</p>
+          <p>mail@mail.com</p>
+        </div>
+      </footer>
     </>
   );
 }
