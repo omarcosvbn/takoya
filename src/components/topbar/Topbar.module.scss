@@ -8,12 +8,14 @@
     justify-content: center;
     align-items: flex-end;
   
+    background-color: white;
+    z-index: 2;
   }
   
   .logo {
       height: auto;
       width: 20vw;
-      z-index: 1;
+
   }
   
   .nav {
@@ -31,4 +33,7 @@
     align-items: center;
     gap: 1.5vw;
     padding: 7vw 0 1vw 0;
+
+    background-color: white;
+    z-index: 1;
   }

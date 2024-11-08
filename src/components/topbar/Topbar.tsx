@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <>
       <header className={styles.header}>
-        <Link href="../menu"><img className={styles.logo} src="/takoya.svg" alt="Takoya" /></Link>
+        <Link href="../"><img className={styles.logo} src="/takoya.svg" alt="Takoya" /></Link>
       </header>
       <nav className={styles.nav}>
         <Link href="../menu">Menu</Link>

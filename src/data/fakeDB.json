@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "/combos/1.webp",
+    "description": "Description for item 1",
+    "type": "combos"
+  },
+  {
+    "id": 2,
+    "image": "/combos/8.webp",
+    "description": "Description for item 2",
+    "type": "combos"
+  },
+  {
+    "id": 3,
+    "image": "/combos/9.webp",
+    "description": "Description for item 3",
+    "type": "combos"
+  },
+  {
+    "id": 4,
+    "image": "/dishes/2.webp",
+    "description": "Description for item 1",
+    "type": "dishes"
+  },
+  {
+    "id": 5,
+    "image": "/dishes/3.webp",
+    "description": "Description for item 2",
+    "type": "dishes"
+  },
+  {
+    "id": 6,
+    "image": "/dishes/4.webp",
+    "description": "Description for item 3",
+    "type": "dishes"
+  },
+  {
+    "id": 7,
+    "image": "/dishes/5.webp",
+    "description": "Description for item 3",
+    "type": "dishes"
+  },
+  {
+    "id": 8,
+    "image": "/dishes/6.webp",
+    "description": "Description for item 2",
+    "type": "dishes"
+  },
+  {
+    "id": 9,
+    "image": "/dishes/7.webp",
+    "description": "Description for item 3",
+    "type": "dishes"
+  },
+  {
+    "id": 10,
+    "image": "/dishes/10.webp",
+    "description": "Description for item 3",
+    "type": "dishes"
+  }
+]
