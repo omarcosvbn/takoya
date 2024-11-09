@@ -1,13 +1,33 @@
 .menu {
-  background-color: #bc002d;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10vw;
 }
 
-.item {
 
-  margin-top: 16px;
+.filterButtons{
+  display: flex;
+  gap: 50px;
+
+  margin-bottom: 100px;
+}
+
+.item {
+  display: flex;
+  gap: 30px;
+
+  margin-bottom: 16px;
+}
+
+.activeButton{
+  border-radius: 10px; 
+  padding-bottom: 2px;
+  border-bottom: solid 5px white;
+}
+
+.inactiveButton{
+  border-radius: 10px; 
+  padding-bottom: 2px;
+  border-bottom: solid 5px #BC002D;
 }

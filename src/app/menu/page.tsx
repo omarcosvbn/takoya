@@ -1,6 +1,5 @@
 "use client";
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import rawData from "../../data/fakeDB.json";
 import { Item } from "../../data/types";
@@ -10,22 +9,43 @@ import Topbar from "@/components/topbar/Topbar";
 const data = rawData as Item[];
 
 export default function Menu() {
-  // State to hold the selected filter type
-  const [filter, setFilter] = useState<string>("all");
+  // State to hold the selected filter type, starting with no filter ("")
+  const [filter, setFilter] = useState<string>("");
 
-  // Filter items based on the selected filter
+  // Filter items based on the selected filter; if filter is empty, show all items
   const filteredItems: Item[] =
-    filter === "all" ? data : data.filter((item: Item) => item.type === filter);
+    filter ? data.filter((item: Item) => item.type === filter) : data;
+
+    useEffect(() => {
+      document.body.style.backgroundColor = '#BC002D'; // Set your styles here
+      return () => {
+        document.body.style.backgroundColor = ''; // Cleanup on component unmount
+      };
+    }, []);
 
   return (
     <>
-      <Topbar />
       <main className={styles.menu}>
         {/* Filter Buttons */}
-        <div>
-          <button onClick={() => setFilter("all")}>All</button>
-          <button onClick={() => setFilter("combos")}>Combos</button>
-          <button onClick={() => setFilter("dishes")}>Dishes</button>
+        <div className={styles.filterButtons}>
+          <Image
+            src="/combos.webp"
+            alt="Combos"
+            width={150}
+            height={150}
+            onClick={() => setFilter("combos")}
+            className={filter === "combos" ? styles.activeButton : styles.inactiveButton}
+            style={{cursor: "pointer", width: "200px"}}
+          />
+          <Image
+            src="/dishes.webp"
+            alt="Dishes"
+            width={150}
+            height={150}
+            onClick={() => setFilter("dishes")}
+            className={filter === "dishes" ? styles.activeButton : styles.inactiveButton}
+            style={{cursor: "pointer", width: "200px"}}
+          />
         </div>
 
         {/* Display Filtered Items */}
@@ -37,12 +57,12 @@ export default function Menu() {
             >
               <Image
                 src={item.image}
-                alt={item.description}
+                alt={item.name}
                 width={150}
                 height={150}
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "200px", height: "auto" ,borderRadius: "10px"}}
               />
-              <p>{item.description}</p>
+              <p>{item.name}</p>
             </div>
           ))}
         </div>

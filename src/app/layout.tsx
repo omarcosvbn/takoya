@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Topbar from "@/components/topbar/Topbar";
 
 export const metadata: Metadata = {
   title: "Takoya",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Topbar />
         {children}
       </body>
     </html>
