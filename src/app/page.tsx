@@ -33,6 +33,7 @@ export default function Home() {
 
   return (
     <>
+    <Topbar />
       <main className={styles.main}>
         <motion.h2
           className={styles.about__circle}

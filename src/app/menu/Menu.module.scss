@@ -2,32 +2,94 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vw;
+  margin-top: 15vw;
 }
 
-
-.filterButtons{
+.filterButtons {
   display: flex;
   gap: 50px;
 
   margin-bottom: 100px;
+
+  padding: 15px;
+background-color: white;
+border-radius: 10px;
+
+  border-top: solid 5px white;
+  border-bottom: solid 5px white;
+
+}
+
+.filter{
+  border-radius: 10px;
+}
+
+.itens{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .item {
   display: flex;
   gap: 30px;
-
   margin-bottom: 16px;
+  
+  width: 600px;
+  
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3vw;
+  color: #bc002d;
+  
+  background-color: white;
+
+  padding: 15px;
+  
+  border-radius: 10px;
 }
 
-.activeButton{
-  border-radius: 10px; 
-  padding-bottom: 2px;
-  border-bottom: solid 5px white;
+.activeButton {
+  position: relative;
+  padding-bottom: 3px;
+  border-bottom: solid 2px #bc002d;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #bc002d;
+    transform: scaleX(1); /* Fully visible */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
 }
 
-.inactiveButton{
-  border-radius: 10px; 
-  padding-bottom: 2px;
-  border-bottom: solid 5px #BC002D;
+.inactiveButton {
+  position: relative;
+  padding-bottom: 3                                                                                                                                                                                                                                                                           px;
+  border-bottom: solid 2px white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #bc002d; /* Same color as active */
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: left;
+    transition: transform 0.3s ease; /* Smooth animation */
+  }
+
+  &:hover::before {
+    transform: scaleX(1); /* Grow the border from left to right */
+  }
 }
+
