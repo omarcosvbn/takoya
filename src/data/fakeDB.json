@@ -2,29 +2,29 @@
   {
     "id": 1,
     "image": "/combos/1.webp",
-    "name": "change name",
-    "description": "Description for item 1",
+    "name": "Nigiri Sushi Platter and Chirashi",
+    "description": "A variety of nigiri sushi and a chirashi bowl.",
     "type": "combos"
   },
   {
     "id": 2,
     "image": "/combos/8.webp",
-    "name": "change name",
-    "description": "Description for item 2",
+    "name": "Nigiri Sushi and Maki Rolls 1",
+    "description": "Slices of salmon, tuna, and shrimp nigiri, accompanied with maki (sushi rolls) with fillings wrapped in rice and nori.",
     "type": "combos"
   },
   {
     "id": 3,
     "image": "/combos/9.webp",
-    "name": "change name",
-    "description": "Description for item 3",
+    "name": "Nigiri Sushi and Maki Rolls 2",
+    "description": "Slices of salmon, tuna, and shrimp nigiri, with maki (sushi rolls) with fillings wrapped in rice and nori.",
     "type": "combos"
   },
   {
     "id": 4,
     "image": "/dishes/2.webp",
     "name": "Salmon Sashimi",
-    "description": "Description for item 1",
+    "description": "Salmon sashimi is a popular choice due to its rich, buttery texture and vibrant color.",
     "type": "dishes"
   },
   {
@@ -38,7 +38,7 @@
     "id": 6,
     "image": "/dishes/4.webp",
     "name": "White Fish Sashimi",
-    "description": "Description for item 3",
+    "description": "Thin slices of white fish, served raw on a bed of shredded daikon radish.",
     "type": "dishes"
   },
   {

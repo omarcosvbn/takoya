@@ -16,6 +16,25 @@ export default function Menu() {
     <>
       <Topbar2 />
       <Map />
+      <div className={styles.infos}>
+        <div className={styles.info}>
+          <h2 className={styles.h2}>Adress</h2>
+          <p className={styles.p}>4690 Convoy St</p>
+          <p className={styles.p}>San Diego CA</p>
+        </div>
+        <div className={styles.info}>
+          <h2 className={styles.h2}>Hours</h2>
+          <h3 className={styles.h3}>Weekdays</h3>
+          <p className={styles.p}>4pm - 9:30pm</p>
+          <h3 className={styles.h3}>Weekend</h3>
+          <p className={styles.p}>5pm - 10pm</p>
+        </div>
+        <div className={styles.info}>
+          <h2 className={styles.h2}>Contacts</h2>
+          <p className={styles.p}>999-999-999</p>
+          <p className={styles.p}>mail@mail.com</p>
+        </div>
+      </div>
     </>
   );
 }
