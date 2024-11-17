@@ -19,40 +19,40 @@
 .steamy {
   display: flex;
   justify-content: center;
-  gap: 1vw;
+  gap: 2vw;
   padding: 3vw 0 1vw 0;
   margin-top: 25vh;
 }
 
 .steam1 {
-  width: 2vw;
+  width: 3vh;
   height: auto;
 }
 .steam2 {
-  width: 2vw;
+  width: 3vh;
   height: auto;
 }
 .steam3 {
-  width: 2vw;
+  width: 3vh;
   height: auto;
 }
 
 .takoyaki {
-  height: 20vw;
-  width: 20vw;
+  height: 30vh;
+  width: 30vh;
   background-color: #bc002d;
   border-radius: 50%;
   position: fixed;
-  margin-top: 40vh;
+  margin-top: 35vh;
   z-index: 0;
 }
 
 .about__circle {
-  width: 20vw;
-  height: 20vw;
+  width: 30vh;
+  height: 30vh;
   background-color: #bc002d;
   border-radius: 50%;
-  margin-top: 40vh;
+  margin-top: 35vh;
   position: fixed;
   z-index: 1;
 
@@ -65,40 +65,42 @@
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 6vh;
 }
 
 .about {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: flex-start;
-  gap: 40vw;
-  margin: 50vh 2vw 0 2vw;
+  gap: 40vh;
+  margin: 15vh 2vw 0 2vw;
   position: fixed;
   z-index: 1;
 
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2vw;
+  font-size: 2.2vh;
   color: black;
 }
 
 .about__text {
-  width: 20vw;
+  width: 60vw;
+  height: 15vh;
   text-align: justify;
 }
 
 .footer {
   position: absolute;
   width: 100vw;
-  height: 22vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 10vw;
+  gap: 8vw;
 
-  border-top: solid 1vw #c0a891;
+  border-top: solid 5vw #c0a891;
   background-color: white;
   color: #464646;
 
@@ -115,7 +117,7 @@
   font-family: "Dosis", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 3vh;
   color: #464646;
 }
 
@@ -123,7 +125,7 @@
   font-family: "Dosis", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.1vw;
+  font-size: 2vh;
   color: #464646;
 }
 
@@ -131,6 +133,83 @@
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1vw;
+  font-size: 2vh;
   color: #464646;
 }
+
+
+@media only screen and (min-width: 992px) {  
+  .second {
+    width: 100vw;
+    height: 150vh;
+  }
+  
+  .steamy {
+    gap: 1vw;
+    padding: 3vw 0 1vw 0;
+    margin-top: 25vh;
+  }
+  
+  .steam1 {
+    width: 2vw;
+  }
+  .steam2 {
+    width: 2vw;
+  }
+  .steam3 {
+    width: 2vw;
+  }
+  
+  .takoyaki {
+    height: 20vw;
+    width: 20vw;
+
+    border-radius: 50%;
+    margin-top: 40vh;
+  }
+  
+  .about__circle {
+    width: 20vw;
+    height: 20vw;
+
+    border-radius: 50%;
+    margin-top: 40vh;
+
+    font-size: 3vw;
+  }
+  
+  .about {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40vw;
+    margin: 50vh 2vw 0 2vw;
+  
+    font-size: 1.2vw;
+  }
+  
+  .about__text {
+    width: 20vw;
+  height: auto;
+  }
+  
+  .footer {
+    width: 100vw;
+    height: 22vh;
+    gap: 10vw;
+  
+    border-top: solid 1vw #c0a891;
+  }
+  
+  .h2 {
+    font-size: 1.4vw;
+  }
+  
+  .h3 {
+    font-size: 1.1vw;
+  }
+  
+  .p {
+    font-size: 1vw;
+  }
+} 
